@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   
-  <title>hello-world - Hexo</title>
+  <title>博客踩坑备忘 - Hexo</title>
   
     <link rel="shortcut icon" href="/favicon.png">
   
@@ -67,27 +67,11 @@
             
             
             
-            <a class="nav-item" href="/friends">Friends</a>
-            
-            
-            
-            <a class="nav-item" href="/projects">Projects</a>
-            
-            
-            
             <a class="nav-item" href="/about">About</a>
             
             
             
-            <a class="nav-item nav-item-github nav-item-icon" href="https://github.com/MrWillCom" target="_blank">&nbsp;</a>
-            
-            
-            
-            <a class="nav-item nav-item-codepen nav-item-icon" href="https://codepen.io/mrwillcom" target="_blank">&nbsp;</a>
-            
-            
-            
-            <a class="nav-item nav-item-patreon nav-item-icon" href="https://www.patreon.com/MrWillCom" target="_blank">&nbsp;</a>
+            <a class="nav-item nav-item-github nav-item-icon" href="https://github.com/RoacherM" target="_blank">&nbsp;</a>
             
             
         </div>
@@ -111,23 +95,51 @@
             
             
             
-            <span>23,</span>
+            <span>24,</span>
             <span>2021</span>
         </div>
         
 
-        <h2 class="title">hello-world</h2>
+        <h2 class="title">博客踩坑备忘</h2>
     </div>
 
     <div class="divider"></div>
 
     <div class="content">
-        
+        <h2 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h2><ul>
+<li><p>更换淘宝源：npm config set registry <a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a></p>
+</li>
+<li><p>安装hexo框架：</p>
+<p>  ​    npm install hero-cli -g</p>
+<p>  ​    npm install hero-deployer-git</p>
+</li>
+<li><p>建立本地博客仓库：</p>
+<p>  ​    hexo init </p>
+<p>  ​    hexo new demo ## 生成博客</p>
+<p>  ​    hexo g ## 生成静态文件配置</p>
+<p>  ​    hexo d ## 部署代码</p>
+</li>
+<li><p>建立GitHub仓库：RoacherM.github.io</p>
+</li>
+<li><p>链接Github仓库：修改博客文件夹中的_config.yml文件</p>
+  <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">	<span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">	<span class="attr">repository:</span> <span class="string">“你的仓库地址”</span></span><br><span class="line">	<span class="attr">branch:</span> <span class="string">“你的分支”</span> <span class="comment"># 建议新建一个，main分支只保留基础信息比较合适</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>域名解析：</p>
+<p>  <img src="CNAME.png" alt="CNAME"></p>
+</li>
+</ul>
+<p>​        添加CNAME</p>
+<p>​        在GitHub主页settings-&gt;option中找到Custom Options,将你的域名<a href="http://www.houpsite.com/">www.houpsite.com</a>写进去，保存</p>
+<ul>
+<li>更换主题：去<a target="_blank" rel="noopener" href="https://hexo.io/themes/]">https://hexo.io/themes/</a>下面寻找自己喜欢的主题</li>
+<li>完结撒花</li>
+</ul>
+
     </div>
 
     <div class="about">
         <h1>About this Post</h1>
-        <p>This post is written by Hexo.io, licensed under <a
+        <p>This post is written by RoacherM, licensed under <a
                 target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc/4.0">CC BY-NC 4.0</a>.</p>
     </div>
 
@@ -146,46 +158,10 @@
                 
                 <a href="/archives" class="item" target="_blank">Archives</a>
                 
-                <a href="/friends" class="item" target="_blank">Friends</a>
-                
-                <a href="/projects" class="item" target="_blank">Projects</a>
-                
-                <a href="/resume" class="item" target="_blank">Resume</a>
-                
-                <a href="/about" class="item" target="_blank">About</a>
-                
-                <a href="/atom.xml" class="item" target="_blank">RSS</a>
-                
-            </div>
-            
-            <div class="group">
-                <h4 class="title">Projects</h4>
-                
-                <a href="https://github.com/transmister" class="item" target="_blank">Transmister</a>
-                
-                <a href="https://github.com/MrWillCom/css-and-js-windows-uwp-xaml-controls" class="item" target="_blank">CSS&amp;JS Windows UWP XAML Controls</a>
-                
-                <a href="https://github.com/MrWillCom/hexo-theme-cupertino" class="item" target="_blank">Theme Cupertino</a>
-                
-                <a href="https://github.com/MrWillCom/github-dark-mode" class="item" target="_blank">GitHub Dark Mode</a>
-                
-            </div>
-            
-            <div class="group">
-                <h4 class="title">Me</h4>
-                
-                <a href="https://github.com/MrWillCom" class="item" target="_blank">GitHub</a>
-                
-                <a href="https://codepen.io/mrwillcom" class="item" target="_blank">CodePen</a>
-                
-                <a href="https://www.patreon.com/MrWillCom" class="item" target="_blank">Patreon</a>
-                
-                <a href="mailto:mr.will.com@outlook.com" class="item" target="_blank">Email</a>
-                
             </div>
             
         </div>
-        &copy; 2021 Hexo.io<br />
+        &copy; 2021 RoacherM<br />
         Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
 </footer>
